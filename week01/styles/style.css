@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+p {
+    color: white;
+    font-family: var(--font-secondary);
+}
+
+h2,
+h3 {
+    font-family: var(--font-primary);
+    color: white;
+}
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --color-primary: #5D0E41;
+    --color-secondary: #222831;
+}
+
+header {
+    background-color: red;
+    height: 120px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+}
+
+.header-title h2 span {
+    color: yellow;
+}
+
+.navigation {
+    background-color: var(--color-secondary);
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+}
+
+.navigation nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.navigation nav ul li {
+    list-style: none;
+    transition: .3s;
+}
+
+.navigation nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.navigation nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.navigation nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+    background-color: var(--color-secondary);
+}
+
+.personal-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info-container .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.personal-info-container .personal-info p {
+    color: white;
+    width: 70%;
+    text-align: start;
+    margin-right: 10px;
+}
+
+.personal-info-container .personal-info img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.personal-info-container .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.personal-info-container .title-container h2 {
+    padding: 10px 0px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 3px solid var(--color-primary);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.about-container .country-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+}
+
+.about-container .country-container h3 {
+    font-size: 1.6rem;
+    border-bottom: 1px solid white;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-container .country-container .country-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.about-container .country-container .country-info p {
+    width: 70%;
+    color: white;
+
+    text-align: start;
+}
+
+.aside-dev-resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--color-primary);
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 30%;
+}
+
+.aside-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0px;
+    background-color: var(--color-primary);
+    width: 100%;
+}
+
+.aside-dev-resources aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.aside-dev-resources aside a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.aside-dev-resources aside a:hover {
+    transform: scale(1.2);
+    color: var(--color-primary);
+}
+
+.footer-container {
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.personal-info p {
+    color: white;
+
+    font-size: 1.1rem;
+}
+
+.last-updated p {
+    color: var(--color-secondary);
+
+    font-size: 1.1rem;
+}
