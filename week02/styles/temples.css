@@ -41,7 +41,7 @@ h1 {
     font-size: 1.6rem;
 }
 nav{
-    display: none;
+    display: none !important;
 }
 
 
@@ -200,10 +200,10 @@ nav{
 
 @media (min-width: 768px) {
     .svg-icon{
-        display: none !important;
+        display: none;
     }
     nav{
-        display: block !important;
+        display: block;
     }
     .gallery-container {
         grid-template-columns: 1fr 1fr;
