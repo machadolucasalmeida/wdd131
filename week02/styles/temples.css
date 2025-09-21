@@ -40,6 +40,10 @@ p {
 h1 {
     font-size: 1.6rem;
 }
+nav{
+    display: none;
+}
+
 
 .header-container nav ul {
     display: flex;
@@ -195,6 +199,12 @@ h1 {
 
 
 @media (min-width: 768px) {
+    .svg-icon{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
     .gallery-container {
         grid-template-columns: 1fr 1fr;
     }
