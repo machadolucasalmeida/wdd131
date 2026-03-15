@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: arial, sans-serif;
+    color: #333;
+}
+
+header,
+footer {
+    background-color: #4a154b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '✕';
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color .3s ease;
+}
+
+.navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main h2 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    color: #4a154b;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+
+
+@media (min-width: 48rem) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        width: fit-content;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+    }
+
+}
