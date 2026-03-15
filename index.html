@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>WDD 131 – Dynamic Web Fundamentals – Lucas Machado</title>
-
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <meta name="description"
         content="Lucas Machado portfolio for the WDD 131 – Dynamic Web Fundamentals course. This page showcases web development projects, assignments, and learning progress in HTML, CSS, and JavaScript.">
 
     <meta name="keywords"
         content="Lucas Machado, WDD 131, Dynamic Web Fundamentals, web development, HTML, CSS, JavaScript, portfolio">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -37,14 +38,23 @@
                 <div class="profile">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere tempora eos obcaecati maiores
                         distinctio suscipit molestiae minus non minima, quam ratione modi officiis ea quisquam
-                        necessitatibus eaque. Sequi, nemo excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae ea et iure temporibus. Corporis, nobis est, eum aliquam consequatur quibusdam officia a error similique ipsam, incidunt dolorem voluptate tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, similique saepe asperiores voluptatum nemo voluptate harum pariatur ad possimus, nisi rem eaque veritatis impedit praesentium. Odio amet nam voluptates id!</p>
+                        necessitatibus eaque. Sequi, nemo excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Veritatis molestiae ea et iure temporibus. Corporis, nobis est, eum aliquam consequatur
+                        quibusdam officia a error similique ipsam, incidunt dolorem voluptate tempora. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Molestias, similique saepe asperiores voluptatum nemo
+                        voluptate harum pariatur ad possimus, nisi rem eaque veritatis impedit praesentium. Odio amet
+                        nam voluptates id!</p>
                     <img src="images/profile-image.png" alt="Lucas Machado" class="profile-image">
                 </div>
                 <div class="country">
                     <h3>Florianópolis, Brazil</h3>
                     <div class="country-description">
                         <img src="images/brazil-flag.svg" alt="Brazil Flag" class="country-image">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perferendis ipsum! Nobis, quaerat eaque. Quae eius voluptates aliquid sunt. Molestias quod magnam error odio dolores sint ea ad doloremque ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi cum obcaecati omnis enim, harum, quam ab ullam reprehenderit est recusandae nam atque, eaque voluptatem tempora fugit doloremque in delectus.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perferendis ipsum! Nobis,
+                            quaerat eaque. Quae eius voluptates aliquid sunt. Molestias quod magnam error odio dolores
+                            sint ea ad doloremque ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam sequi cum obcaecati omnis enim, harum, quam ab ullam reprehenderit est recusandae
+                            nam atque, eaque voluptatem tempora fugit doloremque in delectus.</p>
                     </div>
                 </div>
             </div>
@@ -62,10 +72,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 &#128511; Lucas Machado &#128511; &#127796;Brazil&#127796;</p>
+        <p>&copy; <span id="currentyear"></span> &#128511; Lucas Machado &#128511; &#127796; Brazil &#127796;</p>
         <p><span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>
