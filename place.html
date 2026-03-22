@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore dados essenciais e o clima em tempo real do Brasil. Informações sobre população, capital, moedas e curiosidades em um layout responsivo e moderno.">
+    <title>Brasil - Information</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2 id="titulo-hero">brazil</h2>
+            <figure>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/place/medium.webp">
+                    <img src="images/place/small.webp" alt="Aerial view of a Brazilian landscape" class="hero-image"
+                        fetchpriority="high" width="500" height="300">
+                </picture>
+                <figcaption class="sr-only">Beautiful landscape representing Brazil</figcaption>
+            </figure>
+
+            <div id="data-card" class="info-card left-card"></div>
+            <div id="weather-card" class="info-card right-card"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span class="desktop-emoticon"></span> Lucas Machado <span
+                class="desktop-emoticon"></span> &#127796;Brazil&#127796;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

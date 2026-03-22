@@ -1,0 +1,145 @@
+/* Variáveis de Cores (Tema Brasil) */
+:root {
+    --primary-color: #007a2e;
+    --secondary-color: #ffd700;
+    --accent-color: #002776;
+    --text-color: #212121;
+    --bg-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#titulo-hero {
+    display: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-color: #eee;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sr-only {
+    display: none;
+   
+}
+
+.info-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 40px solid var(--primary-color);
+    position: relative;
+    min-height: 250px;
+    contain: content;
+}
+
+.info-card h2 {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    width: 100%;
+    left: 0;
+    top: -40px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.data-row strong {
+    font-weight: bold;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.weather-svg {
+    width: 60px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-card {
+        position: absolute;
+        background-color: var(--card-bg);
+        margin: 0;
+        width: 300px;
+    }
+
+    .left-card {
+        left: 5%;
+        top: 10%;
+    }
+
+    .right-card {
+        right: 5%;
+        bottom: 10%;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .desktop-emoticon::after {
+        content: " 🗿 ";
+    }
+}
