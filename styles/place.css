@@ -53,7 +53,7 @@ figure {
 
 .sr-only {
     display: none;
-   
+
 }
 
 .info-card {
@@ -102,6 +102,10 @@ figure {
     height: auto;
 }
 
+h1::after {
+    content: "";
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -139,7 +143,7 @@ footer {
         display: none;
     }
 
-    .desktop-emoticon::after {
-        content: " 🗿 ";
+    h1::after {
+        content: " 🌴";
     }
 }
