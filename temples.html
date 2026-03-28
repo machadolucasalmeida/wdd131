@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explore the Temple Album project, a responsive gallery featuring beautiful temples from around the world including Montana, Switzerland, and more.">
+        content="Explore the Temple Album project, a responsive gallery featuring beautiful temples from around the world.">
     <title>Temple Gallery</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://content.churchofjesuschrist.org">
     <link rel="stylesheet" href="styles/temples.css">
     <script src="scripts/temples.js" defer></script>
 </head>
@@ -18,63 +19,17 @@
         <button id="menu" aria-label="Toggle navigation menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" id="home" class="active">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
-        <div class="gallery">
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/billings-montana/800x500/10-Billings-Montana-Temple-1566343.jpg"
-                    alt="Billings Montana Temple" loading="lazy" width="400" height="250">
-                <figcaption>Billings Montana Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/billings-montana/400x225/07-Billings-Montana-Temple-2220507.jpg"
-                    alt="Billings Montana Temple" loading="lazy" width="400" height="250">
-                <figcaption>Billings Montana Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bern-switzerland/800x500/bern-switzerland-temple-lds-1053202-wallpaper.jpg"
-                    alt="Bern Switzerland Temple" loading="lazy" width="400" height="250">
-                <figcaption>Bern Switzerland Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/800x500/3-Barranquilla-Columblia-Temple-2135198.jpg"
-                    alt="Barranquilla Columblia Temple" loading="lazy" width="400" height="250">
-                <figcaption>Barranquilla Columblia Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/800x500/2-3c2316607190934fc0265f4107b5013b0cc4b21e.jpeg"
-                    alt="San Diego California Temple" loading="lazy" width="400" height="250">
-                <figcaption>requipa Peru</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/400x225/anchorage-temple-lds-253274-wallpaper.jpg"
-                    alt="Anchorage Temple" loading="lazy" width="400" height="250">
-                <figcaption>Anchorage Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/800x500/albuquerque-temple-lds-137883-wallpaper.jpg"
-                    alt="Albuquerque Temple" loading="lazy" width="400" height="250">
-                <figcaption>Albuquerque Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x225/accra-ghana-temple-detail-249022-2400x1200.jpg"
-                    alt="Accra Ghana Temple" loading="lazy" width="400" height="250">
-                <figcaption>Accra Ghana Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/800x500/aba-nigeria-temple-lds-248708-high-res-print.jpg"
-                    alt="Aba Nigeria Temple" loading="lazy" width="400" height="250">
-                <figcaption>Aba Nigeria Temple</figcaption>
-            </figure>
-        </div>
+        <h2 id="gallery-title">Home</h2>
+        <div class="gallery"></div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> &#128511; Lucas Machado &#128511; &#127796;Brazil&#127796;</p>
