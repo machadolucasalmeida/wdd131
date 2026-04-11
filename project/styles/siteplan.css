@@ -1,0 +1,166 @@
+/* --- VibeBoard Theme Variables --- */
+:root {
+    --cyan-glow: #06b6d4;
+    --cyan-light: #67e8f9;
+    --bg-dark: #0f172a;
+    --text-light: #f8fafc;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Body & Background (Aurora Effect) --- */
+body {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    /* Fundo gradiente estilo Aurora */
+    background: linear-gradient(135deg, var(--bg-dark), #1e293b, #083344);
+    background-attachment: fixed;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --- Typography --- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    color: var(--cyan-light);
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+h3 {
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    margin-top: 1.5rem;
+    color: #cbd5e1;
+    /* Cinza claro para subtítulos */
+}
+
+p,
+ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Glassmorphism Panels --- */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+header.glass-panel {
+    text-align: center;
+}
+
+footer.glass-panel {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* --- Demo Classes for Typography --- */
+.font-heading {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.font-body {
+    font-family: var(--font-body);
+}
+
+/* --- Color Swatches for the Rubric --- */
+.color-palette {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.color-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 100px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.primary {
+    background-color: var(--cyan-glow);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+}
+
+.background {
+    background-color: var(--bg-dark);
+    color: var(--cyan-light);
+    border: 1px solid var(--glass-border);
+}
+
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-light);
+}
+
+/* --- Wireframe Image Styling --- */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <style>
+        .review-message {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="review-message">
+            <h2>Thank You!</h2>
+            <p>Your review has been submitted successfully.</p>
+            <p>You have submitted a total of <strong id="review-counter">0</strong> reviews.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#128511; Lucas Machado &#128511; &#127796;Brazil&#127796;</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Criteria 6 - localStorage Counter
+        let numReviews = Number(window.localStorage.getItem("reviews-counter")) || 0;
+        numReviews++;
+        window.localStorage.setItem("reviews-counter", numReviews);
+
+        document.getElementById("review-counter").textContent = numReviews;
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
